@@ -2,6 +2,7 @@ require "yaml"
 require "pry"
 
 def load_library(emoticon)
+  binding.pry
 loadout = YAML.load_file('./lib/emoticons.yml')
   output_hash = {
     :get_meaning => {},
