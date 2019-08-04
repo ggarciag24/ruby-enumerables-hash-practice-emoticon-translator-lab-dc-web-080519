@@ -8,7 +8,12 @@ loadout = YAML.load_file('./lib/emoticons.yml')
     :get_emoticon => {}
   }
   loadout.each do |word_meaning, emojis|
-    binding.pry
+    # binding.pry
+    emojis.each do |face|
+      face[0]
+      face[1]
+      binding.pry
+    end
     
   end
 
