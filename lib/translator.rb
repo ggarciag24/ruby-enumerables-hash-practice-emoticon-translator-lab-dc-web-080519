@@ -59,7 +59,7 @@ def get_japanese_emoticon(file_path, emoji)
   get_hash = load_library(file_path)
   translation = get_hash[:get_emoticon][emoji]
   if !!get_hash[:get_emoticon][emoji] == false
-    return ""
+    return "Sorry, that emoticon was not found"
   end  
   
    return translation
