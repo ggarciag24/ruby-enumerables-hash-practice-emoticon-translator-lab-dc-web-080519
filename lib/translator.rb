@@ -57,7 +57,8 @@ loadout = YAML.load_file('./lib/emoticons.yml')
 
 def get_japanese_emoticon(file_path, emoticon)
   load_library(file_path)
-  [:get_emoticon][emoticon]
+  get_hash = load_library(emoticon)
+  binding.pry
 end
 
 def get_english_meaning
