@@ -1,9 +1,9 @@
 require "yaml"
 require "pry"
 
-def load_library(emoticon)
+def load_library(file_path)
   binding.pry
-loadout = YAML.load_file('./lib/emoticons.yml')
+loadout = YAML.load_file(file_path)
   output_hash = {
     :get_meaning => {},
     :get_emoticon => {}
