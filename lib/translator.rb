@@ -14,7 +14,7 @@ loadout = YAML.load_file('./lib/emoticons.yml')
    
       # binding.pry
     end
-    
+    return output_hash
   end
 
 
