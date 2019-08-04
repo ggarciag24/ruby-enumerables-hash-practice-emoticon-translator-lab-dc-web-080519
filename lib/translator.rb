@@ -12,7 +12,7 @@ loadout = YAML.load_file('./lib/emoticons.yml')
     output_hash[:get_emoticon][emojis[0]] = emojis[1] 
     output_hash[:get_meaning][emojis[1]] = word_meaning
    
-      binding.pry
+      # binding.pry
     end
     
   end
